@@ -1,0 +1,22 @@
+# Core API
+fastapi
+uvicorn[standard]
+
+# Google Gemini
+google-generativeai
+
+# Workflow / Event system
+inngest
+
+# Async HTTP (if calling external APIs)
+httpx
+
+# Data validation
+pydantic
+
+# Environment variables
+python-dotenv
+
+# Background tasks & scheduling
+apscheduler
+
