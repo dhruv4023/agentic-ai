@@ -1,12 +1,13 @@
 # Core API
-fastapi
-uvicorn[standard]
+fastapi==0.109.2
+fastapi-cors
+uvicorn[standard]==0.17.*
+itsdangerous
 
 # Google Gemini
-google-generativeai
-
+google-genai==1.64.0
 # Workflow / Event system
-inngest
+inngest==0.5.15
 
 # Async HTTP (if calling external APIs)
 httpx
