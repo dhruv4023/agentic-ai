@@ -2,6 +2,7 @@ import re
 import httpx
 from urllib.parse import urlparse, unquote
 from dataclasses import dataclass
+from schemas.note_schema import NoteState
 from typing import Optional
 
 
@@ -85,3 +86,12 @@ async def fetch_github_content(value: str) -> Optional[str]:
 
     return "\n".join(selected_lines)
 
+
+async def fetch_code(state: NoteState):
+
+    for note in state["notes"]:
+        note["github_content"] = await fetch_github_content(
+            note["permanentLink"]
+        )
+
+    return state

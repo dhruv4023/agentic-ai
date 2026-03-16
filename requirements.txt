@@ -1,15 +1,15 @@
-# Core API
+# FastAPI Backend
 fastapi==0.109.2
-fastapi-cors
 uvicorn[standard]==0.17.*
-itsdangerous
+itsdangerous==2.2.0
 
 # Google Gemini
 google-genai==1.64.0
-# Workflow / Event system
+
+# Workflow / Event System
 inngest==0.5.15
 
-# Async HTTP (if calling external APIs)
+# HTTP client
 httpx
 
 # Data validation
@@ -18,6 +18,16 @@ pydantic
 # Environment variables
 python-dotenv
 
-# Background tasks & scheduling
-apscheduler
+# Background tasks
+apscheduler==3.11.2
 
+# Database
+pymongo==4.6.1
+
+# AI / embeddings
+langchain==1.2.12
+langchain-community==0.4.1
+langchain-core==1.2.19
+langchain_huggingface==1.2.1
+sentence-transformers
+langchain-mongodb===0.11.0
